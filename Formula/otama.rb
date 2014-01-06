@@ -3,7 +3,7 @@ require 'formula'
 class Otama < Formula
   homepage 'https://github.com/nagadomi/otama'
   url 'https://github.com/nagadomi/otama/archive/v0.7.2.tar.gz'
-  sha1 '9a4d169b8976231360e88a0ce06b1559899ed83c'
+  sha1 '2da554957964c2c64dfd0e46e85c06c593577717'
 
   head 'https://github.com/nagadomi/otama.git'
 
