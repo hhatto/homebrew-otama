@@ -8,6 +8,9 @@ class Nv < Formula
   head 'https://github.com/nagadomi/nv.git'
 
   def install
-    system './autogen.sh', './configure --disable-openmp', 'make', 'make install'
+    system './autogen.sh'
+    system './configure', '--disable-openmp'
+    system 'make'
+    system 'make install'
   end
 end
