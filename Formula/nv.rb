@@ -12,8 +12,6 @@ class Nv < Formula
   depends_on :libtool
 
   def install
-    inreplace 'autogen.sh', 'libtoolize', 'glibtoolize'
-
     system 'sh autogen.sh'
     system './configure', '--disable-openmp', "--prefix=#{prefix}"
     system 'make'
