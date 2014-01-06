@@ -9,7 +9,7 @@ class Nv < Formula
 
   depends_on :autoconf
   depends_on :automake
-  depends_on :libtoold
+  depends_on :libtool
 
   def install
     inreplace 'autogen.sh'
