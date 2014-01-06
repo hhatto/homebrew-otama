@@ -7,6 +7,8 @@ class Nv < Formula
 
   head 'https://github.com/nagadomi/nv.git'
 
+  depends_on 'autoconf'
+
   def install
     system './autogen.sh'
     system './configure', '--disable-openmp'
