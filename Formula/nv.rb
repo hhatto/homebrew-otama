@@ -12,7 +12,7 @@ class Nv < Formula
   depends_on :libtool
 
   def install
-    inreplace 'autogen.sh'
+    inreplace 'autogen.sh', 'autoreconf'
 
     system 'sh autogen.sh'
     system './configure', '--disable-openmp', "--prefix=#{prefix}"
