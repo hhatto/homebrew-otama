@@ -10,6 +10,7 @@ class Nv < Formula
   depends_on :autoconf
   depends_on :automake
   depends_on :libtool
+  depends_on 'eiio'
 
   def install
     system 'sh autogen.sh'
