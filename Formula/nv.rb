@@ -7,15 +7,12 @@ class Nv < Formula
 
   head 'https://github.com/nagadomi/nv.git'
 
-  depends_on 'glib'
-  depends_on 'pkg-config'
-
-  depends_on :autoconf => :build
-  depends_on :automake => :build
-  depends_on :libtool => :build
+  depends_on :autoconf
+  depends_on :automake
+  depends_on :libtoold
 
   def install
-    inreplace 'autogen.sh', 'libtoolize', 'glibtoolize'
+    inreplace 'autogen.sh'
 
     system 'sh autogen.sh'
     system './configure', '--disable-openmp', "--prefix=#{prefix}"
