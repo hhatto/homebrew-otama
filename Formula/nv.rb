@@ -14,7 +14,7 @@ class Nv < Formula
 
   def install
     system 'sh autogen.sh'
-    system './configure', '--disable-openmp', "--prefix=#{prefix}"
+    system './configure', '--disable-openssl', '--disable-openmp', "--prefix=#{prefix}"
     system 'make'
     system 'make', 'install'
   end
