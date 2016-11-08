@@ -12,6 +12,7 @@ class Otama < Formula
   depends_on 'libtool'
   depends_on 'nv'
   depends_on 'leveldb'
+  depends_on 'openssl'
 
   def install
     system 'sh autogen.sh'
